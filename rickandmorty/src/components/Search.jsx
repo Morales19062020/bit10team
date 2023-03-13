@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import '../App.css';
 
 function Search() {
 const [query, setQuery] = useState('');
@@ -12,8 +14,8 @@ const Search = async () => {
 
 return (
     <>
-    <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
-    <button onClick={Search} className="btn btn-warning">Search</button>
+    <input  type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
+    <button  onClick={Search} className="btn btn-warning">Search</button>
     <div>
     <ul>
         {results.map((character) => (
