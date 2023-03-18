@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import  Characters  from './Characters';
 import Favorites from './Favorites';
+import Nosotros from './Nosotros';
 
 
 const Navbar  = ({characters}) => {
@@ -21,6 +22,9 @@ return (
         <Link class="navi" className='mx-2 btn btn-warning' to='/favorites'>
             FAVORITES
         </Link>
+        <Link class="navi" className='mx-2 btn btn-warning' to='/nosotros'>
+            NOSOTROS
+        </Link>
         
             
         
@@ -33,6 +37,7 @@ return (
     <Routes>
         <Route path='/' element={<Characters characters={characters} />} />
         <Route path='/favorites' element={<Favorites characters={characters} />} />
+        <Route path='/nosotros' element={<Nosotros />} />
         
     </Routes>
     </BrowserRouter>
