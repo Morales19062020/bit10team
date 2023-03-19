@@ -8,7 +8,7 @@ return (
     <div className='row'>
         {characters.map((item, index) =>(
                 <div key={index} className='col mb-4'>
-                    <div className='card' style={{minWidth: "200px"}}>
+                    <div className='card' style={{minWidth: "50px", padding: "0.5em", borderRadius: "20px", boxShadow: "0px 0px 10px rgba(0,0,0,0.2)", transition: "box-shadow 0.3s ease" }}>
                         <img src={item.image} alt="" />
                         <div className='card-body'>
                             <h5 className='card-title' >{item.name}</h5>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
 function Search() {
@@ -12,8 +13,8 @@ const Search = async () => {
 
 return (
     <>
-    <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
-    <button onClick={Search} className="btn btn-warning">Search</button>
+    <input  type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
+    <button  onClick={Search} className="btn btn-warning">Search</button>
     <div>
     <ul>
         {results.map((character) => (
@@ -30,3 +31,5 @@ return (
 }
 
 export default Search;
+
+
