@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-// import 'bootstrap/dist/css/bootstrap.min.css';
-=======
 import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> c75cfb76a43923e1ad3466ced58cbe63e78bdfe2
 import axios from 'axios';
 import '../App.css';
 
