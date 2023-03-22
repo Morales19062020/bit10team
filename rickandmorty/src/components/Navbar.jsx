@@ -25,12 +25,7 @@ return (
         <Link class="navi" className='mx-2 btn btn-warning' to='/nosotros'>
             NOSOTROS
         </Link>
-        
-            
-        
-        
             </th>
-
         </table>
         
     </nav>
