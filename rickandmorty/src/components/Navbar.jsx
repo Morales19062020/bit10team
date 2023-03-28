@@ -8,31 +8,28 @@ import Nosotros from './Nosotros';
 const Navbar  = ({characters}) => {
 return (
     <BrowserRouter>
-    <nav className='navbar navbar-dark bg-dark'>
-        <div className='container mt-2'>
-        <h1 className='text-white ' >Rick and morty App</h1>
-
-        </div>
+    <nav 
+    style={{ 
+    backgroundColor: '#333', 
+    color: '#fff',
+    fontSize: '2rem',
+    padding: '1rem',
+}} 
+>
+        <h1 className='text-white}' >Rick and morty </h1>
         <table>
             <th>
-            
             <Link class="navi" className='mx-2 btn btn-warning ' to='/'>
         HOME
         </Link>
-        <Link class="navi" className='mx-2 btn btn-warning' to='/favorites'>
+            <Link class="navi" className='mx-2 btn btn-warning' to='/favorites'>
             FAVORITES
         </Link>
-        <Link class="navi" className='mx-2 btn btn-warning' to='/nosotros'>
+            <Link class="navi" className='mx-2 btn btn-warning' to='/nosotros'>
             NOSOTROS
         </Link>
-        
-            
-        
-        
             </th>
-
         </table>
-        
     </nav>
     <Routes>
         <Route path='/' element={<Characters characters={characters} />} />
