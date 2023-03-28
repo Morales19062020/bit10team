@@ -1,7 +1,7 @@
 import React, { useState,} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Navbar from './Navbar'
+// import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+// import Navbar from './Navbar'
 import '../App.css'
 import {Modal,ModalHeader,ModalBody,ModalFooter,} from "reactstrap";
 
@@ -37,8 +37,8 @@ function Favorites () {
   }
   //Const de Editacion//
   const editar=()=>{
-    var dataNueva=data;
-    dataNueva.map(personaje=>{
+    let dataNueva=data;
+    dataNueva.map(personaje=> {
       if(personaje.id===artSeleccionado.id){
         personaje.nombre=artSeleccionado.nombre;
         personaje.anime=artSeleccionado.anime;
@@ -135,8 +135,8 @@ function Favorites () {
           </div>
         </ModalBody>
         <ModalFooter>
-          <button type="button" class="btn btn-outline-warning" onClick={()=>editar()}>Actualizar</button>
-          <button type="button" class="btn btn-outline-danger" onClick={()=>setModalEditar(false)}>Cancelar</button>
+          <button type="button"   onClick={()=>editar()}>Actualizar</button>
+          <button type="button"  onClick={()=>setModalEditar(false)}>Cancelar</button>
         </ModalFooter>
       </Modal>
 
@@ -145,7 +145,7 @@ function Favorites () {
           Estás Seguro que deseas eliminar el personaje {artSeleccionado && artSeleccionado.nombre}
         </ModalBody>
         <ModalFooter>
-          <button type="button" class="btn btn-outline-warning" onClick={()=>eliminar()}>
+          <button type="button"  onClick={()=>eliminar()}>
             Aceptar
           </button>
           <button
@@ -195,15 +195,12 @@ function Favorites () {
           </div>
         </ModalBody>
         <ModalFooter>
-          <button type="button" class="btn btn-outline-warning" onClick={()=>insertar()}>Insertar</button>
-          <button type="button" class="btn btn-outline-danger" onClick={()=>setModalInsertar(false)}>Cancelar</button>
+          <button type="button"  onClick={()=>insertar()}>Insertar</button>
+          <button type="button"  onClick={()=>setModalInsertar(false)}>Cancelar</button>
         </ModalFooter>
       </Modal>
     </div>
-   
   );
-
-  
   }
 
 

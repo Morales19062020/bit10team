@@ -2,14 +2,14 @@
     text-align: center;
   }
   .tabla{
-    width:100%;
-    max-width: 700px;
+    width:50em;
+    max-width: 50em;
     margin:auto ;
-    margin-top: 40px;
+    margin-top: 80px;
     position:relative;
-    backdrop-filter: blur(10px);
-    background-color:#FFCC8F;
-    color: black;
+    backdrop-filter: blur(20px);
+    background-color:#52975f;
+    color: rgb(16, 16, 16);
     padding: 20px 50px;
     transition: all 500ms;
     text-align: center;
